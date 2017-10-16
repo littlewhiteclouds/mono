@@ -1,6 +1,6 @@
 <template>
 <div id="shanagye">
-	商业
+	社区
 </div>
 </template>
 

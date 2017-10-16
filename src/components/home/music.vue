@@ -1,6 +1,6 @@
 <template>
 <div id="shanagye">
-	商业
+	音乐
 </div>
 </template>
 

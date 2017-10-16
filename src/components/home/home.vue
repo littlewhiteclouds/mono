@@ -1,22 +1,21 @@
 <template>
-<div class="news">
+<div class="home">
 	<div class="tab">
 		<!-- tab栏 -->
 		<Scroller :lock-y="true">
-			<tab :style="{'width': tabWidth}"
-			  :line-width="3"
+			<tab :line-width="1"
 			  :animate="false"
 			  :active-color="'#35495e'"
-			  :index="2">
+			  :index="1">
 				<tab-item @on-item-click="go(item)"
 				  :selected="i===0"
+				  class="vux-tab-item"
 				  v-for="(item,i) in tabList"
 				  :key="i">{{item.title}}</tab-item>
 			</tab>
 		</Scroller>
 	</div>
 	<router-view></router-view>
-	<router-view name="newDetail"></router-view>
 </div>
 </template>
 
@@ -31,31 +30,31 @@ export default {
 	data() {
 		return {
 			tabList: [ {
-					title: '首页',
-					path: 'index'
-				},
-				{
-					title: '商业',
-					path: 'shangYe'
-				},
-				{
-					title: '财经',
-					path: 'caijing'
-				},
-				{
-					title: '汽车',
-					path: 'cart'
+					title: '早午茶',
+					path: 'brunch'
 				},
 				{
 					title: '我的订阅',
 					path: 'myFeeds'
+				},
+				{
+					title: '猜你喜欢',
+					path: 'recommend'
+				},
+				{
+					title: '画册',
+					path: 'photo'
+				},
+				{
+					title: '音乐',
+					path: 'music'
 				}
 			]
 		};
 	},
 	methods: {
 		go( item ) {
-			this.$router.push( `/news/${item.path}` );
+			this.$router.push( `/home/${item.path}` );
 		}
 	},
 	computed: {
@@ -72,8 +71,16 @@ export default {
 </script>
 
 <style lang="less">
-.news {
+.home {
     height: 100%;
     position: relative;
+}
+
+.vux-tab-item {
+    background: #5cb85c!important;
+    color: #fff!important;
+}
+tab {
+    width: 100%;
 }
 </style>

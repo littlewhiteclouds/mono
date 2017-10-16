@@ -9,10 +9,10 @@ import * as types from './types'
 Vue.use(Vuex)
 
 const state ={
-
+  nodeList:[],
+  zaowucha: 0,
+  initLoad: false,
 }
-
-
 
 
 export default new Vuex.Store({

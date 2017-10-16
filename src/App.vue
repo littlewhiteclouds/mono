@@ -8,14 +8,13 @@
 		<!-- 底部按钮 -->
 		<Tabbar slot="bottom">
 			<TabbarItem selected
-			  link="/recommend">
+			  link="/home">
 				<span slot="icon">
             <img src="./assets/recommend.jpg"></img>
           </span>
 				<span slot="label">推荐</span>
 			</TabbarItem>
-			<TabbarItem show-dot
-			  link="/discovery">
+			<TabbarItem link="/discovery">
 				<span slot="icon">
             <img src="./assets/discovery.jpg"></img>
           </span>
@@ -27,7 +26,8 @@
           </span>
 				<span slot="label">社区</span>
 			</TabbarItem>
-			<TabbarItem link="/mine">
+			<TabbarItem link="/mine"
+			  show-dot>
 				<span slot="icon">
             <img src="./assets/people.jpg"></img>
           </span>
@@ -85,26 +85,14 @@ html {
     height: 100%;
     overflow-x: hidden;
 }
-
 #app {
     height: 100%;
-
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-    }
-
     .content {
         width: 100%;
         height: 100%;
         box-sizing: border-box;
-        padding-top: 46px;
         overflow: hidden;
     }
-
     .footer {
         position: fixed;
         bottom: 0;
@@ -113,14 +101,5 @@ html {
         z-index: 999;
     }
 
-    /* .slide-enter-active, .slide-leave-active {
-    transition: transform 0.3s;
-  }
-  .slide-enter {
-    transform: translate3d(100%, 0, 0);
-  }
-  .slide-leave-to {
-    transform: translate3d(-100%, 0, 0);
-  } */
 }
 </style>
