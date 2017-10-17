@@ -1,33 +1,17 @@
 
-> A Vue.js project
+> mono社区
 
-## Build Setup
+mono社区是一个分享生活中有趣的事物的社区。
 
-``` bash
-# install dependencies
+## 运行
+```
+git clone https://github.com/littlewhiteclouds/mono.git
+cd mono
 npm install
-
-# serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
+在浏览器中自动打开 http://localhost:3000
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-# 模块说明
-
-
-  brunch 早午茶
-
-  myFeeds 我的订阅
-  
-  recommend 猜你喜欢
-
-  photo 画册
-  
-  music 音乐
+# 功能模块
+早午茶，我的订阅。
