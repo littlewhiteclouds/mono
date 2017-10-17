@@ -9,9 +9,9 @@ git clone https://github.com/littlewhiteclouds/mono.git
 cd mono
 npm install
 npm run dev
-
 ```
-在浏览器中自动打开 http://localhost:3000
+在浏览器中自动打开 http://localhost:8888
 
 # 功能模块
+
 早午茶，我的订阅。
